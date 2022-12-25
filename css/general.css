@@ -32,7 +32,7 @@ header nav{
 main {
     margin: auto;
     margin-top: 10px;
-    width: 1300px;
+    max-width: 1300px;
     font-family: 'Martian Mono', monospace;
     
 }
@@ -55,7 +55,7 @@ main h2{
 }
 
 main h2::before{
-    content: "; ";
+    content: ";";
     color: #32aaaa;
 }
 main p{
