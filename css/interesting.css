@@ -1,0 +1,40 @@
+body{
+    cursor: url('/img/cursor.png'), auto;
+}
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 90vh;
+    color: white;
+}
+
+section img {
+    max-width: 30vw;
+    border: black 10px solid;
+    border-radius: 10px;
+}
+
+.stand {
+    padding: 30px;
+    background-color: black;
+}
+
+.platform{
+    padding:0 100px 10px 100px ;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+.monitors {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    gap: 10rem;
+
+}
+
+.monitor {
+    min-width: 100vw;
+}

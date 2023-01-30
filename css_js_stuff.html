@@ -1,36 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.1.2/kute.min.js"></script>
-    <title>Stuff :: SimplyJozef</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/slideshow.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">WELCOME</a>
-        <a href="posts.html">POSTS</a>
-        <a href="css_js_stuff.html">INTERESTIG CSS/JS STUFF</a>
-      </nav>
-    </header>
-    <footer>© 2023 SimplyJozef</footer>
-  </body>
+    
+    
+
+
+    <title>Slideshow</title>
+</head>
+<body class="body">
+    <div class="screen-swiper-buttons">
+        <button class="left" onclick="leftClick()">
+            <i class="fa fa-regular fa-arrow-left"></i>
+        </button>
+        <button class="right" onclick="rightClick()">
+            <i class="fa fa-regular fa-arrow-right"></i>
+        </button>
+    </div>
+        <div class="screen-group">
+            <div class="screen" data-index="0" data-status="active">
+                <a href="dynamikscroll.html">
+                    <div class="window">
+                        <div class="topbar-outline">
+                            <div class="topbar">
+                                <i class="far fa-window-minimize"></i>
+                                <i class="far fa-window-maximize"></i>
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                        <div class="top-ui-outline">
+                            <div class="top-ui">
+                                <div class="notchs">
+                                    <div class="notch"></div>
+                                    <i class="fa fa-regular fa-arrow-left"></i>
+                                    <i class="fa fa-regular fa-arrow-right"></i>
+                                    <i class="fa fa-regular fa-home"></i>
+                                    <div class="notch"></div>
+                                </div>
+                                <i class="fas fa-sync-alt"></i>
+                                <div class="searchbar"></div>
+                                <i class="fas fa-folder"></i>
+                            </div>
+                        </div>
+                        <div><img src="/img/scrollpage.png" alt="" srcset=""></div>
+                        <div class="bottom-bar">
+                            <div class="wide-bottom-bar"></div>
+                            <div class="short-bottom-bar"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="screen" data-index="1" data-status="unknown">
+                <div class="window">
+                    <div class="topbar-outline">
+                        <div class="topbar">
+                            <i class="far fa-window-minimize"></i>
+                            <i class="far fa-window-maximize"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="top-ui-outline">
+                        <div class="top-ui">
+                            <div class="notchs">
+                                <div class="notch"></div>
+                                <i class="fa fa-regular fa-arrow-left"></i>
+                                <i class="fa fa-regular fa-arrow-right"></i>
+                                <i class="fa fa-regular fa-home"></i>
+                                <div class="notch"></div>
+                            </div>
+                            <i class="fas fa-sync-alt"></i>
+                            <div class="searchbar"></div>
+                            <i class="fas fa-folder"></i>
+                        </div>
+                    </div>
+                    <div><img src="/img/404-error.png" alt="" srcset=""></div>
+                    <div class="bottom-bar">
+                        <div class="wide-bottom-bar"></div>
+                        <div class="short-bottom-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="screen" data-index="2" data-status="unknown">
+                <div class="window">
+                    <div class="topbar-outline">
+                        <div class="topbar">
+                            <i class="far fa-window-minimize"></i>
+                            <i class="far fa-window-maximize"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="top-ui-outline">
+                        <div class="top-ui">
+                            <div class="notchs">
+                                <div class="notch"></div>
+                                <i class="fa fa-regular fa-arrow-left"></i>
+                                <i class="fa fa-regular fa-arrow-right"></i>
+                                <i class="fa fa-regular fa-home"></i>
+                                <div class="notch"></div>
+                            </div>
+                            <i class="fas fa-sync-alt"></i>
+                            <div class="searchbar"></div>
+                            <i class="fas fa-folder"></i>
+                        </div>
+                    </div>
+                    <div><img src="/img/404-error.png" alt="" srcset=""></div>
+                    <div class="bottom-bar">
+                        <div class="wide-bottom-bar"></div>
+                        <div class="short-bottom-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="screen" data-index="3" data-status="unknown">
+                <div class="window">
+                    <div class="topbar-outline">
+                        <div class="topbar">
+                            <i class="far fa-window-minimize"></i>
+                            <i class="far fa-window-maximize"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="top-ui-outline">
+                        <div class="top-ui">
+                            <div class="notchs">
+                                <div class="notch"></div>
+                                <i class="fa fa-regular fa-arrow-left"></i>
+                                <i class="fa fa-regular fa-arrow-right"></i>
+                                <i class="fa fa-regular fa-home"></i>
+                                <div class="notch"></div>
+                            </div>
+                            <i class="fas fa-sync-alt"></i>
+                            <div class="searchbar"></div>
+                            <i class="fas fa-folder"></i>
+                        </div>
+                    </div>
+                    <div><img src="/img/404-error.png" alt="" srcset=""></div>
+                    <div class="bottom-bar">
+                        <div class="wide-bottom-bar"></div>
+                        <div class="short-bottom-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="/js/slideshow.js"></script>
 </html>
