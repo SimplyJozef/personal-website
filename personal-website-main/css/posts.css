@@ -1,0 +1,72 @@
+body{
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #297373;
+
+}
+
+a:hover{
+    transition: 0.3s ease;
+    color: white;
+}
+
+.icon{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+
+main h1{
+    position: relative;
+}
+
+h2{
+    margin-top: 0;
+}
+.year{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 20px;
+}
+
+.year section:first-child{
+    border-right: rgba(156, 156, 156, 0.801) 2px solid;
+}
+article div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+article div:nth-child(2){
+    display: flex;
+    align-items: center;   
+    margin-left: 2em;
+    line-height: 0;
+}
+
+article div:nth-child(2) p, article div:nth-child(2) a{
+    font-size: 12px;
+    margin-right: 5px;
+}
+article div:nth-child(2) p{
+    margin-right: 20px;
+}
+article div:nth-child(2) div:last-child{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+article div:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+.previev_text{
+    padding: 5px;
+    border-bottom: rgba(156, 156, 156, 0.801) 2px dashed ;
+}
+

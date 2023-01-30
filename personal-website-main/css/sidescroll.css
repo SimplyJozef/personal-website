@@ -1,0 +1,58 @@
+.top-ui, .topbar {
+    transform: translateY(-30px);
+    z-index: 999;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 99%;
+    outline:#9b9b9b 2px solid;
+    border-left: white 1px solid;
+    border-top: white 1px solid;
+}
+
+.topbar {
+    transform: translateY(-60px);
+    background: rgb(2,64,179);
+    background: linear-gradient(90deg, rgba(2,64,179,1) 7%, rgba(77,169,225,1) 100%);
+    padding: 3px 0 3px 0;   
+}
+
+.top-ui i, .topbar i {
+    color: black;
+}
+
+.screen img {
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+    box-shadow: -1px -1px 3px black;
+    border-bottom: white 2px solid;
+}
+
+.window{
+    padding: 65px 5px 55vh 5px;
+    background-color: #bdbdbd;
+    position: absolute;
+    width: 100%;
+}
+
+.searchbar {
+    margin-top: 1px;
+    width: 80%;
+    height: 18px;
+    background-color: white;
+}
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5vw;
+}
+
+.topbar i {
+    background-color: #bdbdbd;
+    outline: #9b9b9b 2px solid;
+    border-left: white 1px solid;
+    border-top: white 1px solid;
+    padding: 0px 3px 0 3px;
+}
